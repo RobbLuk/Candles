@@ -44,10 +44,10 @@
     <style>
 
         
-                    .page-image {
-                object-position: center;
+        .page-image {
+            object-position: center;
                 
-            }
+        }
         
         .display-image {
             border-radius: 50%;
@@ -75,37 +75,31 @@
             font-weight: 500;
             text-transform: none;
             border-radius: 8px;
-            
-                            min-height: 60px;
-                    }
+            min-height: 60px;
+        }
 
         .page-item-wrap {
-                            margin: 16px 0;
-                    }
+            margin: 16px 0;
+        }
 
         .page-item-wrap:last-child {
             margin-bottom: 0;
         }
 
-                    .page-item-wrap:hover {
-                transform: translate3d(0px, 0px, 0px) scale(1.015);
-            }
-        
-         .page-item-wrap{
-            
-         }
-
+        .page-item-wrap:hover {
+            transform: translate3d(0px, 0px, 0px) scale(1.015);
+        }
         .page-item {
             border: 0px solid #FFFFFF;
             background: #FFFFFF ;
             border-radius: 8px;
-           box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(24, 39, 75, 0.05);
+            box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(24, 39, 75, 0.05);
         }
 
         
         .embed-wrap iframe, .embed-wrap-inside {
-                            border-radius: 8px;
-                    }
+            border-radius: 8px;
+        }
 
         .link-each-image, .page-item-wrap {
             border-radius: 8px;
@@ -135,8 +129,12 @@
             position: absolute; /* Stick to bottom */
             bottom: 0; /* At the bottom */
             left: 0; /* Align left */
-            /*background: rgba(117, 114, 114, 0.5); /* Semi-transparent background */
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            /*background: rgba(117, 114, 114, 0.5);*/ /* Semi-transparent background */
         }
+
 
         
     </style>
@@ -277,8 +275,8 @@
 
 <footer class="footer">
     <div class="button-container">
-        <button onClick="navigateToKontakt()">Kontakt</button>
-        <button onClick="navigateToImpressum()">Impressum</button>
+        <p class=buttom text-align: center onClick="navigateToKontakt()"><span>&#169;</span> Angelika Nitsch, 2024</p>
+        <p class=buttom onClick="navigateToImpressum()">Impressum und Datenschutzerklärung</p>
     </div>
 </footer>
 
